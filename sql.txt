@@ -1,0 +1,56 @@
+-- *** SqlDbx Personal Edition ***
+-- !!! Not licensed for commercial use beyound 90 days evaluation period !!!
+-- For version limitations please check http://www.sqldbx.com/personal_edition.htm
+-- Number of queries executed: 1363, number of rows retrieved: 836228
+
+
+
+SELECT * FROM firme_master WHERE cod_fiscal = '39146436'
+SELECT * FROM medici_master WHERE id_firma_master = 38365
+SELECT * FROM medici_externi WHERE id_firma_master = 8364
+
+SELECT * FROM firme_master WHERE denumire = '23715454'
+SELECT * FROM medici_master WHERE denumire = 'BADIU CORIN'
+SELECT TOP 10 * FROM pm_facturi WHERE medic = 'I_7030'
+SELECT * FROM medici_master_ext 
+
+SELECT * FROM medici_master_ext WHERE medic_master = '6997' ORDER BY data_expirare DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_6997' AND grup = 'POND' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_6952' AND grup = 'STEM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'E_10776' AND grup = 'STEM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'E_11473' AND grup = 'STEM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_3036' AND grup = 'POND' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_3037' AND grup = 'POND' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_5892' AND grup = 'CRB' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_5492' AND grup = 'GASTRO' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_5312' AND grup = 'CMU' ORDER BY id_pm_facturi DESC
+SELECT TOP 3 * FROM pm_facturi WHERE medic = 'I_6980' AND grup = 'CMU' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_6798' AND grup = 'CMU' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_2811' AND grup = 'CMU' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_6270' AND grup = 'PREM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_3020' AND grup = 'STEM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_1483' AND grup = 'STEM' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_5128' AND grup = 'ECH' ORDER BY id_pm_facturi DESC
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_7009' AND grup = 'POZIMED' ORDER BY id_pm_facturi DESC
+
+SELECT * FROM medici_master_ext WHERE medic_master ='2118' ORDER BY ID ASC
+SELECT TOP 1 * FROM pm_facturi WHERE medic = 'I_284' AND grup = 'POND' ORDER BY data_factura DESC
+
+SELECT ent_juridica, medic, denumire, id_forma_contr, cod FROM medici_master WHERE id_firma_master = 2900
+
+
+SELECT * FROM medici_master_ext WHERE medic_master ='6464' ORDER BY data_emitere DESC
+
+
+SELECT denumire, cont, cod_fiscal FROM firme_master WHERE cod_fiscal IN ('15710936', '18463202', 'RO5919324', 'RO14009050', '27590027', '14105023', '29410661', '33370956', 'RO28353290', 'RO26630352', '2610501', '16491486', '24454900', 'RO24469080', '29114763', '18164472', '22183847', '19216537', '25109543', '35621094', '22355713', '17002740', '29290603', '30157091')
+
+SELECT TOP 2 * FROM pm_facturi WHERE medic = 'I_3590'
+WHERE medic = 'I_19968'
+
+
+SELECT * FROM nom_reprezentanti WHERE id = 42
+SELECT * FROM pm_facturi_ext
+SELECT * FROM medici_master_ext
+SELECT * FROM firme_master 
+RO10INGB0000999905608495
+RO10INGB0000999905608495
